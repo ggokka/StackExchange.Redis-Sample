@@ -16,7 +16,7 @@ namespace stackexchangeredis
             IDatabase db = redis.GetDatabase();
             long count = 10000 * 10;
             DateTime start = DateTime.Now;
-
+             
             #region all redis data write methods
             db.StringSet("key_test", "shaocan");
             db.HashSet("userinfo", "name", "shaocan");
